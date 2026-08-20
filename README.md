@@ -26,25 +26,26 @@ Es totalmente escalable a cualquier región y tipo de datos ya que se pueden mos
 
 ## Arquitectura
 
-```
-LinkedIn (navegador)
-    │  click derecho → "Enviar a Notibrief"
+```text
+Usuario (Navegador Web)
+    │  Abre index.html (GitHub Pages)
     ▼
-content.js (captura texto + imagenes del DOM)
-    │
+Leaflet.js Engine + CartoDB Positron Tiles
+    │  Carga el mapa base vectorial ligero
     ▼
-background.js (envia al servidor)
-    │
+GeoJSON Overhead Layer (Folium Output)
+    │  Renderiza los 5,163 polígonos de edificios reproyectados (EPSG:4326)
     ▼
-server.py:8787 (almacena, limpia, resume)
-    │
+CSS Dynamic Style Function
+    │  Aplica la escala cromática de riesgo según la cota relativa (≤2m, 2m-5m, >5m)
     ▼
-Web UI (muestra posts con imagenes inline + resumenes)
-```
+Branca MacroElement (Leyenda & Tooltips)
+    │  Inyecta la leyenda flotante DOM y despliega métricas ZonalStats al hacer hover/click
+    ▼
+Web UI (Visualización del mapa interactivo final con fichas por inmueble)
 
-- **Sin scraping**: la extension lee el DOM del navegador autenticado
-- **Sin dependencias pesadas**: resumen extractivo puro (TF-IDF), sin modelos de ML
-- **Cero baneos**: el servidor nunca toca LinkedIn
+- **Sin scraping**: datos oficiales obtenidos del CNIG https://centrodedescargas.cnig.es/CentroDescargas/home
+- **Sin dependencias pesadas**: sin instalaciones previas, solo abre el enlace del mapa. 
 
 ## Estructura del proyecto
 
