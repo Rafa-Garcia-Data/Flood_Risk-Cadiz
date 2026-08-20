@@ -5,6 +5,8 @@ Es un proyecto simple con cero fricción para el usuario ya que el producto fina
 Es totalmente escalable a cualquier región y tipo de datos ya que se pueden mostrar nombres de calles o zonas del municipio afectadas, puntos críticos afectados ( hospitales, colegios, etc ) , entre muchos otros.
 Se han usado datos oficiales del [CNIG](https://centrodedescargas.cnig.es/CentroDescargas/home) con mapa del terreno de alta definición a fecha de 2020.
 
+:world_map:[MAPA INTERACTIVO](https://rafa-garcia-data.github.io/Flood_Risk-Cadiz/)
+
 ## Tecnologías
 
 <img width="112" height="20" alt="image" src="https://github.com/user-attachments/assets/1ad60109-8306-42be-859e-984bc0cda445" /> <img width="74" height="20" alt="image" src="https://github.com/user-attachments/assets/71e22524-8798-444f-b309-f362bf0ba891" /> <img alt="Static Badge" src="https://img.shields.io/badge/rasterio-bib-blue?style=plastic&logo=numpy"> <img alt="Static Badge" src="https://img.shields.io/badge/geopandas-bib-white?style=plastic&logo=geopandas"> <img alt="Static Badge" src="https://img.shields.io/badge/QGIS-red?style=plastic&logo=Qgis"> <img alt="Static Badge" src="https://img.shields.io/badge/rasterstats-bib-black?style=plastic&logo=python"> <img alt="Static Badge" src="https://img.shields.io/badge/folium-bib-green?style=plastic&logo=folium">
