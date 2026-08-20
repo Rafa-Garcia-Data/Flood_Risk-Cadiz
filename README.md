@@ -2,6 +2,8 @@
 
 Mapa interactivo de las inundaciones del municipio de Cádiz.
 
+--EN CONSTRUCCIÓN--
+
 ## Tecnologías
 
 <img width="112" height="20" alt="image" src="https://github.com/user-attachments/assets/cfbb9c2b-6e1b-484d-9b34-6fa5b85f287a" />
