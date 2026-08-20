@@ -2,20 +2,15 @@
 
 Mapa interactivo de las inundaciones del municipio de Cádiz.
 
---EN CONSTRUCCIÓN--
-
 ## Tecnologías
 
 
-<img width="112" height="20" alt="image" src="https://github.com/user-attachments/assets/1ad60109-8306-42be-859e-984bc0cda445" />
-<img width="74" height="20" alt="image" src="https://github.com/user-attachments/assets/71e22524-8798-444f-b309-f362bf0ba891" />
+<img width="112" height="20" alt="image" src="https://github.com/user-attachments/assets/1ad60109-8306-42be-859e-984bc0cda445" /> <img width="74" height="20" alt="image" src="https://github.com/user-attachments/assets/71e22524-8798-444f-b309-f362bf0ba891" /> <img alt="Static Badge" src="https://img.shields.io/badge/rasterio-bib-blue?style=plastic&logo=numpy"> <img alt="Static Badge" src="https://img.shields.io/badge/geopandas-bib-white?style=plastic&logo=geopandas"> <img alt="Static Badge" src="https://img.shields.io/badge/QGIS-red?style=plastic&logo=Qgis">
 
-![Static Badge](https://img.shields.io/badge/rasterio-blue?style=plastic&logo=numpy)
-
-
-[![My Skills](https://skillicons.dev/icons?i=docker,python,fastapi,html&theme=light)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=python,vscode,html,css&theme=light)](https://skillicons.dev)
 
 ## Como funciona
+--EN CONSTRUCCIÓN--
 
 1. Instala la extension de Chrome en `extension/` en la carpetaraíz de la app. SOLO UNA VEZ este paso. 
 2. Haz click derecho en un post de LinkedIn ( justo donde haces click en "más" para desplegar la publicación) → **Enviar a Notibrief**
