@@ -68,7 +68,7 @@ Flood_Risk-Cadiz/
 └── vias_cadiz_clip.gpkg           # Capa de viario urbano recortada de Cádiz
 ```
 ## Resultados
-- <ins>Disminuye</ins> tu <ins>tiempo</ins> haciendo scrolling en la red social, seleccionando sólo las publicaciones que te interesen
-- <ins>Click</ins> derecho del ratón
-- Proyecto de mejora de una base previa dedicado a portales de noticias generales, ahora <ins>centrado en LinkedIn</ins>
-- Mejora la <ins>calidad de la <ins>información</ins> que recibes
+- <ins>Visualización</ins> rápida para previsión o previsiones futuras de lluvias o subidas del nivel del mar ( escalable a todo tipo de desastres naturales ).
+- Un solo enlace para la demostración del proyecto. 
+- Proyecto de estudio y práctica sobre conocimientos de datos geoespaciales y QGIS y entornos de trabajos de python orientados a geodata.
+- Leyenda y escala de colores intuitivos e información sobre el inmueble por donde se pasa el cursor.
