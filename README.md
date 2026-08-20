@@ -26,7 +26,7 @@ Es totalmente escalable a cualquier región y tipo de datos ya que se pueden mos
 
 ## Arquitectura
 
-```text
+```text 
 Usuario (Navegador Web)
     │  Abre index.html (GitHub Pages)
     ▼
@@ -48,6 +48,8 @@ Web UI (Visualización del mapa interactivo final con fichas por inmueble)
 - **Zero Backend**: Renderizado 100% en el cliente (Client-side Leaflet.js) sin necesidad de servidor ni base de datos activa.
 - **Carga optimizada**: Capa geoespacial vectorizada y optimizada para una navegación fluida sin sobrecargar la memoria del navegador.
 - **Sin dependencias GIS**: Permite la inspección técnica completa de elevaciones desde cualquier dispositivo o navegador web.
+
+```
 
 ## Estructura del proyecto
 
