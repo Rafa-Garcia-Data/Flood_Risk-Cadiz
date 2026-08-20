@@ -51,22 +51,19 @@ Web UI (Visualización del mapa interactivo final con fichas por inmueble)
 
 ## Estructura del proyecto
 
-```
-Notibrief/
-├── server.py              # Servidor FastAPI + web UI
-├── resumidor.py           # Resumen extractivo (TF-IDF)
-├── captured_posts.json    # Posts capturados
-├── Dockerfile             # Imagen Docker
-├── docker-compose.yml     # Servicio Docker
-├── start.bat              # Lanzador one-click
-├── stop.bat               # Detener servidor
-├── requirements.txt       # Dependencias Python
-└── extension/             # Extension Chrome
-    ├── manifest.json
-    ├── content.js
-    ├── background.js
-    └── icons/
-```
+```text
+Flood_Risk-Cadiz/
+├── .gitignore                     # Configuración de exclusiones de Git
+├── README.md                      # Documentación principal del repositorio
+├── cadiz_boundary.gpkg            # Capa vectorial del límite municipal de Cádiz
+├── cadiz_riesgo_inundacion.qgz    # Proyecto de QGIS montado con simbología y capas
+├── edificios_cadiz_clip.gpkg      # Huellas urbanas de edificios recortadas
+├── edificios_riesgo_cadiz.gpkg    # GeoPackage final procesado con estadísticas zonales
+├── index.html                     # Visor web interactivo desplegado en GitHub Pages
+├── main.ipynb                     # Notebook de Jupyter con el pipeline ETL (Python)
+├── mdt_cadiz.tif                  # Modelo Digital del Terreno (Raster 2m del CNIG)
+└── vias_cadiz_clip.gpkg           # Capa de viario urbano recortada de Cádiz
+
 
 ## API
 
