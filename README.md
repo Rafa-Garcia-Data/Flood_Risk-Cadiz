@@ -54,7 +54,7 @@ Web UI (Visualización del mapa interactivo final con fichas por inmueble)
 
 
 
-## Estructura del proyecto
+## Estructura del proyecto :electric_plug:
 
 ```text
 Flood_Risk-Cadiz/
@@ -69,7 +69,7 @@ Flood_Risk-Cadiz/
 ├── mdt_cadiz.tif                  # Modelo Digital del Terreno (Raster 2m del CNIG)
 └── vias_cadiz_clip.gpkg           # Capa de viario urbano recortada de Cádiz
 ```
-## Resultados
+## Resultados :vertical_traffic_light:
 - <ins>Visualización</ins> rápida para previsión o previsiones futuras de lluvias o subidas del nivel del mar ( escalable a todo tipo de desastres naturales ).
 - Un solo <ins>enlace</ins> para la demostración del proyecto. 
 - Proyecto de estudio y práctica sobre conocimientos de datos geoespaciales y QGIS y entornos de trabajos de python orientados a <ins>geodata</ins>.
