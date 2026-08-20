@@ -1,4 +1,4 @@
-# Flood Risk - Cádiz
+ # Flood Risk - Cádiz :ocean:
 
 Proyecto de práctica de QGIS + Python para el tratamiento de datos geoespaciales. EL proyecto consta de un mapa interactivo con leyenda que permite visualizar el riesgo de inundaciones del municipio de Cádiz.
 Es un proyecto simple con cero fricción para el usuario ya que el producto final solo consta de un archivo html. 
@@ -7,13 +7,13 @@ Se han usado datos oficiales del [CNIG](https://centrodedescargas.cnig.es/Centro
 
 :world_map:[MAPA INTERACTIVO](https://rafa-garcia-data.github.io/Flood_Risk-Cadiz/)
 
-## Tecnologías
+## Tecnologías :zap:
 
 <img width="112" height="20" alt="image" src="https://github.com/user-attachments/assets/1ad60109-8306-42be-859e-984bc0cda445" /> <img width="74" height="20" alt="image" src="https://github.com/user-attachments/assets/71e22524-8798-444f-b309-f362bf0ba891" /> <img alt="Static Badge" src="https://img.shields.io/badge/rasterio-bib-blue?style=plastic&logo=numpy"> <img alt="Static Badge" src="https://img.shields.io/badge/geopandas-bib-white?style=plastic&logo=geopandas"> <img alt="Static Badge" src="https://img.shields.io/badge/QGIS-red?style=plastic&logo=Qgis"> <img alt="Static Badge" src="https://img.shields.io/badge/rasterstats-bib-black?style=plastic&logo=python"> <img alt="Static Badge" src="https://img.shields.io/badge/folium-bib-green?style=plastic&logo=folium">
 
 [![My Skills](https://skillicons.dev/icons?i=python,vscode,html,css&theme=light)](https://skillicons.dev)
 
-## Cómo funciona
+## Cómo funciona :bulb:
 
 1. **Accede al mapa interactivo:** Abre la aplicación directamente desde el navegador web sin necesidad de instalar ningún software GIS (a través del enlace de la demo).
 2. **Explora la leyenda de riesgos:** En la esquina inferior izquierda consulta la escala de colores que categoriza los edificios según su cota sobre el nivel del mar ($\le 2\text{m}$ para *Riesgo Alto*, $2\text{m} - 5\text{m}$ para *Riesgo Medio*, y $> 5\text{m}$ para *Riesgo Bajo*).
@@ -26,7 +26,7 @@ Se han usado datos oficiales del [CNIG](https://centrodedescargas.cnig.es/Centro
 
 -Navegador 
 
-## Arquitectura
+## Arquitectura :building_construction:
 
 ```text 
 Usuario (Navegador Web)
