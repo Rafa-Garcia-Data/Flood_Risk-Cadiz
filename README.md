@@ -1,7 +1,8 @@
 # Flood Risk - Cádiz
 
 Proyecto de práctica de QGIS + Python para el tratamiento de datos geoespaciales. EL proyecto consta de un mapa interactivo con leyenda que permite visualizar el riesgo de inundaciones del municipio de Cádiz.
-Es un proyecto totalmente escalable a cualquier región y en cuanto a datos ya que se pueden mostrar nombres de calles o zonas del municipio afectadas, puntos críticos afectados ( hospitales, colegios, etc ) , entre otros.
+Es un proyecto simple con cero fricción para el usuario ya que el producto final solo consta de un archivo html. 
+Es totalmente escalable a cualquier región y tipo de datos ya que se pueden mostrar nombres de calles o zonas del municipio afectadas, puntos críticos afectados ( hospitales, colegios, etc ) , entre muchos otros.
 
 ## Tecnologías
 
@@ -18,41 +19,10 @@ Es un proyecto totalmente escalable a cualquier región y en cuanto a datos ya q
 4. **Consulta la ficha técnica de cada inmueble:** Haz clic o pasa el cursor sobre cualquier edificio para desplegar la información detallada:
    * **Cota mínima ($m$):** Altitud del punto más bajo del terreno del edificio.
    * **Cota media ($m$):** Elevación promedio sobre el nivel del mar.
-1. Instala la extension de Chrome en `extension/` en la carpetaraíz de la app. SOLO UNA VEZ este paso. 
-2. Haz click derecho en un post de LinkedIn ( justo donde haces click en "más" para desplegar la publicación) → **Enviar a Notibrief**
-3. Abre `http://localhost:8787` para ver los posts y generar resumenes
-4. Pulsa **RESUMIR TODO** o resumir individualmente
-5. Pulsa **Cerrar Aplicacion** para apagar el servidor
-
-## Instalacion con Docker (recomendado)
 
 ### Requisitos
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado y ejecutandose
 
-### Pasos
-1. Doble clic en `start.bat`
-2. Se construye la imagen, arranca el servidor y se abre el navegador automaticamente
-3. Para apagar: boton **Cerrar Aplicacion** en la web o doble clic en `stop.bat` en la carpeta raíz de la app.
-
-## Instalacion sin Docker
-
-### Requisitos
-- Python 3.10+
-- Google Chrome con la extension cargada
-
-### Pasos
-```bash
-pip install -r requirements.txt
-python server.py
-```
-
-## Extension de Chrome
-
-1. Abre `chrome://extensions` en Chrome
-2. Activa **Modo desarrollador**
-3. Clic en **Cargar extension sin empaquetar**
-4. Selecciona la carpeta `extension/`
-5. Asegurate de que el servidor este corriendo en `localhost:8787`
+-Navegador 
 
 ## Arquitectura
 
