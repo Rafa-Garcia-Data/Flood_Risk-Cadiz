@@ -12,7 +12,12 @@ Es un proyecto totalmente escalable a cualquier región y en cuanto a datos ya q
 
 ## Como funciona
 --EN CONSTRUCCIÓN--
-
+1. **Accede al mapa interactivo:** Abre la aplicación directamente desde el navegador web sin necesidad de instalar ningún software GIS (a través del enlace de la demo).
+2. **Explora la leyenda de riesgos:** En la esquina inferior izquierda consulta la escala de colores que categoriza los edificios según su cota sobre el nivel del mar ($\le 2\text{m}$ para *Riesgo Alto*, $2\text{m} - 5\text{m}$ para *Riesgo Medio*, y $> 5\text{m}$ para *Riesgo Bajo*).
+3. **Navega e inspecciona la zona:** Utiliza el zoom y el desplazamiento para explorar distintas áreas del municipio de Cádiz (casco histórico, paseo marítimo, zona franca, etc.).
+4. **Consulta la ficha técnica de cada inmueble:** Haz clic o pasa el cursor sobre cualquier edificio para desplegar la información detallada:
+   * **Cota mínima ($m$):** Altitud del punto más bajo del terreno del edificio.
+   * **Cota media ($m$):** Elevación promedio sobre el nivel del mar.
 1. Instala la extension de Chrome en `extension/` en la carpetaraíz de la app. SOLO UNA VEZ este paso. 
 2. Haz click derecho en un post de LinkedIn ( justo donde haces click en "más" para desplegar la publicación) → **Enviar a Notibrief**
 3. Abre `http://localhost:8787` para ver los posts y generar resumenes
