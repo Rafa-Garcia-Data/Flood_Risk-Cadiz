@@ -1,0 +1,113 @@
+# Flood Risk - Cádiz
+
+Mapa interactivo de las inundaciones del municipio de Cádiz.
+
+## Tecnologías
+
+<img width="112" height="20" alt="image" src="https://github.com/user-attachments/assets/cfbb9c2b-6e1b-484d-9b34-6fa5b85f287a" />
+<img width="112" height="20" alt="image" src="https://github.com/user-attachments/assets/1ad60109-8306-42be-859e-984bc0cda445" />
+<img width="116" height="20" alt="image" src="https://github.com/user-attachments/assets/c470f327-ad22-407c-aff7-45cab8c290dc" />
+<img width="51" height="20" alt="image" src="https://github.com/user-attachments/assets/bf4645b0-167c-4a6b-8de2-f24ebf777db4" />
+<img width="51" height="20" alt="image" src="https://github.com/user-attachments/assets/7c5ee399-83e0-40e4-af2c-88de2ddfe52f" />
+<img width="74" height="20" alt="image" src="https://github.com/user-attachments/assets/71e22524-8798-444f-b309-f362bf0ba891" />
+<img width="124" height="20" alt="image" src="https://github.com/user-attachments/assets/d42896aa-94d3-4bc5-bdda-5cfee80b579f" />
+
+[![My Skills](https://skillicons.dev/icons?i=docker,python,fastapi,html&theme=light)](https://skillicons.dev)
+
+## Como funciona
+
+1. Instala la extension de Chrome en `extension/` en la carpetaraíz de la app. SOLO UNA VEZ este paso. 
+2. Haz click derecho en un post de LinkedIn ( justo donde haces click en "más" para desplegar la publicación) → **Enviar a Notibrief**
+3. Abre `http://localhost:8787` para ver los posts y generar resumenes
+4. Pulsa **RESUMIR TODO** o resumir individualmente
+5. Pulsa **Cerrar Aplicacion** para apagar el servidor
+
+## Instalacion con Docker (recomendado)
+
+### Requisitos
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado y ejecutandose
+
+### Pasos
+1. Doble clic en `start.bat`
+2. Se construye la imagen, arranca el servidor y se abre el navegador automaticamente
+3. Para apagar: boton **Cerrar Aplicacion** en la web o doble clic en `stop.bat` en la carpeta raíz de la app.
+
+## Instalacion sin Docker
+
+### Requisitos
+- Python 3.10+
+- Google Chrome con la extension cargada
+
+### Pasos
+```bash
+pip install -r requirements.txt
+python server.py
+```
+
+## Extension de Chrome
+
+1. Abre `chrome://extensions` en Chrome
+2. Activa **Modo desarrollador**
+3. Clic en **Cargar extension sin empaquetar**
+4. Selecciona la carpeta `extension/`
+5. Asegurate de que el servidor este corriendo en `localhost:8787`
+
+## Arquitectura
+
+```
+LinkedIn (navegador)
+    │  click derecho → "Enviar a Notibrief"
+    ▼
+content.js (captura texto + imagenes del DOM)
+    │
+    ▼
+background.js (envia al servidor)
+    │
+    ▼
+server.py:8787 (almacena, limpia, resume)
+    │
+    ▼
+Web UI (muestra posts con imagenes inline + resumenes)
+```
+
+- **Sin scraping**: la extension lee el DOM del navegador autenticado
+- **Sin dependencias pesadas**: resumen extractivo puro (TF-IDF), sin modelos de ML
+- **Cero baneos**: el servidor nunca toca LinkedIn
+
+## Estructura del proyecto
+
+```
+Notibrief/
+├── server.py              # Servidor FastAPI + web UI
+├── resumidor.py           # Resumen extractivo (TF-IDF)
+├── captured_posts.json    # Posts capturados
+├── Dockerfile             # Imagen Docker
+├── docker-compose.yml     # Servicio Docker
+├── start.bat              # Lanzador one-click
+├── stop.bat               # Detener servidor
+├── requirements.txt       # Dependencias Python
+└── extension/             # Extension Chrome
+    ├── manifest.json
+    ├── content.js
+    ├── background.js
+    └── icons/
+```
+
+## API
+
+| Endpoint | Metodo | Descripcion |
+|---|---|---|
+| `/api/status` | GET | Estado del servidor |
+| `/api/posts` | GET | Lista de posts capturados |
+| `/api/capture` | POST | Capturar un post nuevo |
+| `/api/posts/{index}/summarize` | POST | Resumir un post |
+| `/api/summarize-all` | POST | Resumir todos los posts |
+| `/api/posts/{index}` | DELETE | Eliminar un post |
+| `/api/clear` | POST | Limpiar todos los posts |
+| `/api/shutdown` | POST | Apagar el servidor |
+
+## Resultados
+- <ins>Disminuye</ins> tu <ins>tiempo</ins> haciendo scrolling en la red social, seleccionando sólo las publicaciones que te interesen
+- <ins>Click</ins> derecho del ratón
+- Proyecto de mejora de una base previa dedicado a portales de noticias generales, ahora <ins>centrado en LinkedIn</ins>
+- Mejora la <ins>calidad de la <ins>información</ins> que recibes
