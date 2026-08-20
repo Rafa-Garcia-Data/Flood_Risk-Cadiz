@@ -47,7 +47,7 @@ Branca MacroElement (Leyenda & Tooltips)
 Web UI (Visualización del mapa interactivo final con fichas por inmueble)
 ```
 
-- **Sin scraping**: datos oficiales obtenidos del CNIG https://centrodedescargas.cnig.es/CentroDescargas/home
+- **Sin scraping**: datos oficiales descargables y gratuitos.
 - **Zero Backend**: Renderizado 100% en el cliente (Client-side Leaflet.js) sin necesidad de servidor ni base de datos activa.
 - **Carga optimizada**: Capa geoespacial vectorizada y optimizada para una navegación fluida sin sobrecargar la memoria del navegador.
 - **Sin dependencias GIS**: Permite la inspección técnica completa de elevaciones desde cualquier dispositivo o navegador web.
