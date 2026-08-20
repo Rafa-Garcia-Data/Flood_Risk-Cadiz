@@ -43,13 +43,14 @@ Branca MacroElement (Leyenda & Tooltips)
     │  Inyecta la leyenda flotante DOM y despliega métricas ZonalStats al hacer hover/click
     ▼
 Web UI (Visualización del mapa interactivo final con fichas por inmueble)
+```
 
 - **Sin scraping**: datos oficiales obtenidos del CNIG https://centrodedescargas.cnig.es/CentroDescargas/home
 - **Zero Backend**: Renderizado 100% en el cliente (Client-side Leaflet.js) sin necesidad de servidor ni base de datos activa.
 - **Carga optimizada**: Capa geoespacial vectorizada y optimizada para una navegación fluida sin sobrecargar la memoria del navegador.
 - **Sin dependencias GIS**: Permite la inspección técnica completa de elevaciones desde cualquier dispositivo o navegador web.
 
-```
+
 
 ## Estructura del proyecto
 
@@ -65,21 +66,7 @@ Flood_Risk-Cadiz/
 ├── main.ipynb                     # Notebook de Jupyter con el pipeline ETL (Python)
 ├── mdt_cadiz.tif                  # Modelo Digital del Terreno (Raster 2m del CNIG)
 └── vias_cadiz_clip.gpkg           # Capa de viario urbano recortada de Cádiz
-
-
-## API
-
-| Endpoint | Metodo | Descripcion |
-|---|---|---|
-| `/api/status` | GET | Estado del servidor |
-| `/api/posts` | GET | Lista de posts capturados |
-| `/api/capture` | POST | Capturar un post nuevo |
-| `/api/posts/{index}/summarize` | POST | Resumir un post |
-| `/api/summarize-all` | POST | Resumir todos los posts |
-| `/api/posts/{index}` | DELETE | Eliminar un post |
-| `/api/clear` | POST | Limpiar todos los posts |
-| `/api/shutdown` | POST | Apagar el servidor |
-
+```
 ## Resultados
 - <ins>Disminuye</ins> tu <ins>tiempo</ins> haciendo scrolling en la red social, seleccionando sólo las publicaciones que te interesen
 - <ins>Click</ins> derecho del ratón
