@@ -71,6 +71,6 @@ Flood_Risk-Cadiz/
 ```
 ## Resultados
 - <ins>Visualización</ins> rápida para previsión o previsiones futuras de lluvias o subidas del nivel del mar ( escalable a todo tipo de desastres naturales ).
-- Un solo enlace para la demostración del proyecto. 
-- Proyecto de estudio y práctica sobre conocimientos de datos geoespaciales y QGIS y entornos de trabajos de python orientados a geodata.
-- Leyenda y escala de colores intuitivos e información sobre el inmueble por donde se pasa el cursor.
+- Un solo <ins>enlace</ins> para la demostración del proyecto. 
+- Proyecto de estudio y práctica sobre conocimientos de datos geoespaciales y QGIS y entornos de trabajos de python orientados a <ins>geodata</ins>.
+- Leyenda y escala de colores intuitivos e información sobre el inmueble por donde se pasa el <ins>cursor</ins>.
