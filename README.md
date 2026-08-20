@@ -1,11 +1,12 @@
 # Flood Risk - Cádiz
 
-Mapa interactivo de las inundaciones del municipio de Cádiz.
+Proyecto de práctica de QGIS + Python para el tratamiento de datos geoespaciales. EL proyecto consta de un mapa interactivo con leyenda que permite visualizar el riesgo de inundaciones del municipio de Cádiz.
+Es un proyecto totalmente escalable a cualquier región y en cuanto a datos ya que se pueden mostrar nombres de calles o zonas del municipio afectadas, puntos críticos afectados ( hospitales, colegios, etc ) , entre otros.
 
 ## Tecnologías
 
+<img width="112" height="20" alt="image" src="https://github.com/user-attachments/assets/1ad60109-8306-42be-859e-984bc0cda445" /> <img width="74" height="20" alt="image" src="https://github.com/user-attachments/assets/71e22524-8798-444f-b309-f362bf0ba891" /> <img alt="Static Badge" src="https://img.shields.io/badge/rasterio-bib-blue?style=plastic&logo=numpy"> <img alt="Static Badge" src="https://img.shields.io/badge/geopandas-bib-white?style=plastic&logo=geopandas"> <img alt="Static Badge" src="https://img.shields.io/badge/QGIS-red?style=plastic&logo=Qgis"> <img alt="Static Badge" src="https://img.shields.io/badge/rasterstats-bib-black?style=plastic&logo=python"> <img alt="Static Badge" src="https://img.shields.io/badge/folium-bib-green?style=plastic&logo=folium">
 
-<img width="112" height="20" alt="image" src="https://github.com/user-attachments/assets/1ad60109-8306-42be-859e-984bc0cda445" /> <img width="74" height="20" alt="image" src="https://github.com/user-attachments/assets/71e22524-8798-444f-b309-f362bf0ba891" /> <img alt="Static Badge" src="https://img.shields.io/badge/rasterio-bib-blue?style=plastic&logo=numpy"> <img alt="Static Badge" src="https://img.shields.io/badge/geopandas-bib-white?style=plastic&logo=geopandas"> <img alt="Static Badge" src="https://img.shields.io/badge/QGIS-red?style=plastic&logo=Qgis">
 
 [![My Skills](https://skillicons.dev/icons?i=python,vscode,html,css&theme=light)](https://skillicons.dev)
 
