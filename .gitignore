@@ -1,0 +1,13 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Archivos temporales de Python y Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Archivos pesados o sobrantes (opcional)
+data/vias_cadiz.gpkg
+data/edificios_cadiz.gpkg
