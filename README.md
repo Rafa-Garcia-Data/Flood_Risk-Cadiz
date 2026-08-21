@@ -24,7 +24,7 @@ Se han usado datos oficiales del [CNIG](https://centrodedescargas.cnig.es/Centro
 
 ### Requisitos
 
--Navegador 
+- Navegador 
 
 ## Arquitectura :building_construction:
 
